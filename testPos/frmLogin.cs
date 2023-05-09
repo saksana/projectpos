@@ -134,6 +134,9 @@ namespace testPos
             lberror.Visible = false;
         }
 
-
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

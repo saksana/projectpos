@@ -37,22 +37,22 @@ namespace testPos
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lberror = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnreset = new System.Windows.Forms.Button();
             this.btnlogin = new System.Windows.Forms.Button();
             this.panelpassword = new System.Windows.Forms.Panel();
+            this.lbnullpsw = new System.Windows.Forms.Label();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelusername = new System.Windows.Forms.Panel();
+            this.lbnulluser = new System.Windows.Forms.Label();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnexit = new System.Windows.Forms.Button();
-            this.lbnulluser = new System.Windows.Forms.Label();
-            this.lbnullpsw = new System.Windows.Forms.Label();
-            this.lberror = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -166,6 +166,18 @@ namespace testPos
             this.panel2.Size = new System.Drawing.Size(500, 423);
             this.panel2.TabIndex = 1;
             // 
+            // lberror
+            // 
+            this.lberror.AutoSize = true;
+            this.lberror.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lberror.Location = new System.Drawing.Point(24, 348);
+            this.lberror.Name = "lberror";
+            this.lberror.Size = new System.Drawing.Size(208, 28);
+            this.lberror.TabIndex = 13;
+            this.lberror.Text = "*ຊື່ຜູ້ໃຊ້ ຫຼື ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ";
+            this.lberror.Visible = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::testPos.Properties.Resources.user_profile;
@@ -217,6 +229,18 @@ namespace testPos
             this.panelpassword.Size = new System.Drawing.Size(500, 55);
             this.panelpassword.TabIndex = 8;
             // 
+            // lbnullpsw
+            // 
+            this.lbnullpsw.AutoSize = true;
+            this.lbnullpsw.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnullpsw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnullpsw.Location = new System.Drawing.Point(383, 14);
+            this.lbnullpsw.Name = "lbnullpsw";
+            this.lbnullpsw.Size = new System.Drawing.Size(125, 23);
+            this.lbnullpsw.TabIndex = 12;
+            this.lbnullpsw.Text = "*ກະລຸນາໃສ່ລະຫັດຜ່ານ";
+            this.lbnullpsw.Visible = false;
+            // 
             // txtpassword
             // 
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -264,6 +288,18 @@ namespace testPos
             this.panelusername.Name = "panelusername";
             this.panelusername.Size = new System.Drawing.Size(500, 55);
             this.panelusername.TabIndex = 7;
+            // 
+            // lbnulluser
+            // 
+            this.lbnulluser.AutoSize = true;
+            this.lbnulluser.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnulluser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbnulluser.Location = new System.Drawing.Point(404, 17);
+            this.lbnulluser.Name = "lbnulluser";
+            this.lbnulluser.Size = new System.Drawing.Size(100, 23);
+            this.lbnulluser.TabIndex = 11;
+            this.lbnulluser.Text = "*ກະລຸນາໃສ່ຊື່ຜູ້ໃຊ້";
+            this.lbnulluser.Visible = false;
             // 
             // txtusername
             // 
@@ -325,42 +361,6 @@ namespace testPos
             this.btnexit.Visible = false;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
-            // lbnulluser
-            // 
-            this.lbnulluser.AutoSize = true;
-            this.lbnulluser.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnulluser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbnulluser.Location = new System.Drawing.Point(404, 17);
-            this.lbnulluser.Name = "lbnulluser";
-            this.lbnulluser.Size = new System.Drawing.Size(91, 21);
-            this.lbnulluser.TabIndex = 11;
-            this.lbnulluser.Text = "*ກະລຸນາໃສ່ຊື່ຜູ້ໃຊ້";
-            this.lbnulluser.Visible = false;
-            // 
-            // lbnullpsw
-            // 
-            this.lbnullpsw.AutoSize = true;
-            this.lbnullpsw.Font = new System.Drawing.Font("Noto Sans Lao", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnullpsw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbnullpsw.Location = new System.Drawing.Point(383, 14);
-            this.lbnullpsw.Name = "lbnullpsw";
-            this.lbnullpsw.Size = new System.Drawing.Size(113, 21);
-            this.lbnullpsw.TabIndex = 12;
-            this.lbnullpsw.Text = "*ກະລຸນາໃສ່ລະຫັດຜ່ານ";
-            this.lbnullpsw.Visible = false;
-            // 
-            // lberror
-            // 
-            this.lberror.AutoSize = true;
-            this.lberror.Font = new System.Drawing.Font("Noto Sans Lao", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lberror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lberror.Location = new System.Drawing.Point(24, 348);
-            this.lberror.Name = "lberror";
-            this.lberror.Size = new System.Drawing.Size(208, 28);
-            this.lberror.TabIndex = 13;
-            this.lberror.Text = "*ຊື່ຜູ້ໃຊ້ ຫຼື ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ";
-            this.lberror.Visible = false;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -373,6 +373,7 @@ namespace testPos
             this.Name = "frmLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
