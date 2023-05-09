@@ -32,6 +32,7 @@ namespace testPos
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtclose = new testPos.Mycontrols.Mybutton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -39,6 +40,7 @@ namespace testPos
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtclose);
@@ -72,6 +74,13 @@ namespace testPos
             this.label4.Size = new System.Drawing.Size(94, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Develop By";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(447, 277);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 8;
             // 
             // txtclose
             // 
@@ -113,5 +122,6 @@ namespace testPos
         private Mycontrols.Mybutton txtclose;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

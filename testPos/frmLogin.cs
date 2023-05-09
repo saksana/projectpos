@@ -115,14 +115,12 @@ namespace testPos
             }
             else
             {
-                ///MessageBox.Show("ເຂົ້າລະບົບສຳເຫຼັດ !", "ແຈ້ງເຕືອນ", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                this.Hide(); 
                 frmtabbar frmt = new frmtabbar();
                 frmt.sid = dsP.Tables[0].Rows[0].ItemArray[0].ToString();
                 frmt.sname = dsP.Tables[0].Rows[0].ItemArray[1].ToString();
                 frmt.sdate = DateTime.Now.ToString();
                 frmt.Show();
-                
-
             }
 
 
@@ -137,6 +135,13 @@ namespace testPos
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmtabbar frm = new frmtabbar();
+            frm.Show();
         }
     }
 }

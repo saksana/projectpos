@@ -42,10 +42,22 @@ namespace testPos
             sttdate.Text = "Datetime login : "+sdate;
             
         }
-
+        public void clearlink()
+        {
+            tsbarcode.ForeColor = Color.Black;
+            tscustomer.ForeColor = Color.Black;
+            tslogout.ForeColor = Color.Black;
+            tsreport.ForeColor = Color.Black;
+            tssale.ForeColor = Color.Black;
+            tssetting.ForeColor = Color.Black;
+            tsstock.ForeColor = Color.Black;
+            tstotal.ForeColor = Color.Black;
+        }
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-
+            statusStrip1.Visible = false;
+            clearlink();
+            tsbarcode.ForeColor = Color.OrangeRed;
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -55,8 +67,67 @@ namespace testPos
 
         private void toolStriplogout_Click(object sender, EventArgs e)
         {
-            frmLogin frm = new frmLogin();
-            frm.Close();
+            DialogResult dialog = MessageBox.Show("ຕ້ອງການອອກຈາກລະບົບຫຼືບໍ່ ?", "Message", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if(dialog == DialogResult.Yes)
+            {
+                
+                frmLogin frm = new frmLogin();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void frmtabbar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new frmSetting());
+            statusStrip1.Visible = false;
+            clearlink();
+            tssetting.ForeColor = Color.OrangeRed;
+            
+        }
+
+        private void tscustomer_Click(object sender, EventArgs e)
+        {
+            statusStrip1.Visible = false;
+            clearlink();
+            tscustomer.ForeColor = Color.OrangeRed;
+        }
+
+        private void tsstock_Click(object sender, EventArgs e)
+        {
+            statusStrip1.Visible = false;
+            clearlink();
+            tsstock.ForeColor = Color.OrangeRed;
+        }
+
+        private void tssale_Click(object sender, EventArgs e)
+        {
+            statusStrip1.Visible = false;
+            clearlink();
+            tssale.ForeColor = Color.OrangeRed;
+        }
+
+        private void tstotal_Click(object sender, EventArgs e)
+        {
+            statusStrip1.Visible = false;
+            clearlink();
+            tstotal.ForeColor = Color.OrangeRed;
+        }
+
+        private void tsreport_Click(object sender, EventArgs e)
+        {
+            statusStrip1.Visible = false;
+            clearlink();
+            tsreport.ForeColor = Color.OrangeRed;
         }
     }
 }

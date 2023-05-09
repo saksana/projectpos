@@ -201,6 +201,7 @@ namespace testPos
             this.btnreset.TabIndex = 10;
             this.btnreset.Text = "ລືມລະຫັດຜ່ານ ?";
             this.btnreset.UseVisualStyleBackColor = false;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
             // btnlogin
             // 
