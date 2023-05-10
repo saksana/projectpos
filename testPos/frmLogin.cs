@@ -115,12 +115,15 @@ namespace testPos
             }
             else
             {
-                this.Hide(); 
+                
                 frmtabbar frmt = new frmtabbar();
                 frmt.sid = dsP.Tables[0].Rows[0].ItemArray[0].ToString();
                 frmt.sname = dsP.Tables[0].Rows[0].ItemArray[1].ToString();
                 frmt.sdate = DateTime.Now.ToString();
-                frmt.Show();
+                this.Hide();
+                frmt.ShowDialog();
+                frmt = null;
+                this.Show();
             }
 
 
@@ -139,9 +142,21 @@ namespace testPos
 
         private void btnreset_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmtabbar frm = new frmtabbar();
-            frm.Show();
+        }
+
+        private void btnlogin_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnlogin_MouseLeave(object sender, EventArgs e)
+        {
+            btnlogin.BackColor = Color.FromArgb(33, 33, 33);
+        }
+
+        private void btnlogin_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnlogin.BackColor = Color.Black;
         }
     }
 }

@@ -30,12 +30,6 @@ namespace testPos
         private void InitializeComponent()
         {
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.sttid = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sttname = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sttuid = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sttdate = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsbarcode = new System.Windows.Forms.ToolStripButton();
             this.tscustomer = new System.Windows.Forms.ToolStripButton();
             this.tsstock = new System.Windows.Forms.ToolStripButton();
@@ -44,6 +38,12 @@ namespace testPos
             this.tsreport = new System.Windows.Forms.ToolStripButton();
             this.tssetting = new System.Windows.Forms.ToolStripButton();
             this.tslogout = new System.Windows.Forms.ToolStripButton();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.sttid = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sttname = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sttuid = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sttdate = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip2.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -68,58 +68,6 @@ namespace testPos
             this.toolStrip2.Size = new System.Drawing.Size(1122, 63);
             this.toolStrip2.TabIndex = 9;
             this.toolStrip2.Text = "toolStrip2";
-            // 
-            // panelChildForm
-            // 
-            this.panelChildForm.BackColor = System.Drawing.SystemColors.Control;
-            this.panelChildForm.Controls.Add(this.statusStrip1);
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 63);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1122, 615);
-            this.panelChildForm.TabIndex = 10;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.statusStrip1.Font = new System.Drawing.Font("Phetsarath OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sttid,
-            this.sttname,
-            this.sttuid,
-            this.sttdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1122, 32);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // sttid
-            // 
-            this.sttid.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sttid.Name = "sttid";
-            this.sttid.Size = new System.Drawing.Size(54, 26);
-            this.sttid.Text = "empid";
-            // 
-            // sttname
-            // 
-            this.sttname.Name = "sttname";
-            this.sttname.Size = new System.Drawing.Size(83, 26);
-            this.sttname.Text = "empname";
-            // 
-            // sttuid
-            // 
-            this.sttuid.Font = new System.Drawing.Font("Phetsarath OT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sttuid.Name = "sttuid";
-            this.sttuid.Size = new System.Drawing.Size(0, 26);
-            this.sttuid.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // sttdate
-            // 
-            this.sttdate.Name = "sttdate";
-            this.sttdate.Size = new System.Drawing.Size(78, 26);
-            this.sttdate.Text = "Datetime";
             // 
             // tsbarcode
             // 
@@ -233,6 +181,58 @@ namespace testPos
             this.tslogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tslogout.Click += new System.EventHandler(this.toolStriplogout_Click);
             // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.SystemColors.Control;
+            this.panelChildForm.Controls.Add(this.statusStrip1);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(0, 63);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1122, 615);
+            this.panelChildForm.TabIndex = 10;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.statusStrip1.Font = new System.Drawing.Font("Phetsarath OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sttid,
+            this.sttname,
+            this.sttuid,
+            this.sttdate});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1122, 32);
+            this.statusStrip1.TabIndex = 0;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // sttid
+            // 
+            this.sttid.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sttid.Name = "sttid";
+            this.sttid.Size = new System.Drawing.Size(54, 26);
+            this.sttid.Text = "empid";
+            // 
+            // sttname
+            // 
+            this.sttname.Name = "sttname";
+            this.sttname.Size = new System.Drawing.Size(83, 26);
+            this.sttname.Text = "empname";
+            // 
+            // sttuid
+            // 
+            this.sttuid.Font = new System.Drawing.Font("Phetsarath OT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sttuid.Name = "sttuid";
+            this.sttuid.Size = new System.Drawing.Size(0, 26);
+            this.sttuid.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // sttdate
+            // 
+            this.sttdate.Name = "sttdate";
+            this.sttdate.Size = new System.Drawing.Size(78, 26);
+            this.sttdate.Text = "Datetime";
+            // 
             // frmtabbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -245,6 +245,7 @@ namespace testPos
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmtabbar_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmtabbar_FormClosed);
             this.Load += new System.EventHandler(this.frmtabbar_Load);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();

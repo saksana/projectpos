@@ -20,6 +20,7 @@ namespace testPos
         public string sname;
         public string sdate;
         private Form activeForm = null;
+        int fl;
         private void openChildFormInPanel(Form childForm)
         {
             if (activeForm != null)
@@ -67,23 +68,25 @@ namespace testPos
 
         private void toolStriplogout_Click(object sender, EventArgs e)
         {
+            
             DialogResult dialog = MessageBox.Show("ຕ້ອງການອອກຈາກລະບົບຫຼືບໍ່ ?", "Message", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if(dialog == DialogResult.Yes)
             {
-                
-                frmLogin frm = new frmLogin();
-                frm.Show();
-                this.Hide();
+                fl = 1;
+                this.Close();
+               
             }
-            else
+            else if (dialog == DialogResult.No)
             {
-
+                fl = 0;
             }
         }
 
         private void frmtabbar_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+
+            
+
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -128,6 +131,12 @@ namespace testPos
             statusStrip1.Visible = false;
             clearlink();
             tsreport.ForeColor = Color.OrangeRed;
+        }
+
+        private void frmtabbar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+
         }
     }
 }

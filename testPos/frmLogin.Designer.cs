@@ -217,6 +217,9 @@ namespace testPos
             this.btnlogin.Text = "ເຂົ້າສູ່ລະບົບ";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            this.btnlogin.MouseLeave += new System.EventHandler(this.btnlogin_MouseLeave);
+            this.btnlogin.MouseHover += new System.EventHandler(this.btnlogin_MouseHover);
+            this.btnlogin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnlogin_MouseMove);
             // 
             // panelpassword
             // 
