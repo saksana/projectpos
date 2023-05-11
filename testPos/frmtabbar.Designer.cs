@@ -65,7 +65,7 @@ namespace testPos
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip2.Size = new System.Drawing.Size(1122, 63);
+            this.toolStrip2.Size = new System.Drawing.Size(1422, 63);
             this.toolStrip2.TabIndex = 9;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -188,7 +188,7 @@ namespace testPos
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 63);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1122, 615);
+            this.panelChildForm.Size = new System.Drawing.Size(1422, 658);
             this.panelChildForm.TabIndex = 10;
             // 
             // statusStrip1
@@ -201,9 +201,9 @@ namespace testPos
             this.sttname,
             this.sttuid,
             this.sttdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 583);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 626);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1122, 32);
+            this.statusStrip1.Size = new System.Drawing.Size(1422, 32);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -237,9 +237,10 @@ namespace testPos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 678);
+            this.ClientSize = new System.Drawing.Size(1422, 721);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.toolStrip2);
+            this.MinimumSize = new System.Drawing.Size(1344, 756);
             this.Name = "frmtabbar";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

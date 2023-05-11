@@ -93,6 +93,12 @@
     <Compile Include="frmcustomer.Designer.cs">
       <DependentUpon>frmcustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmdatacustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdatacustomer.Designer.cs">
+      <DependentUpon>frmdatacustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmemployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmcustomer.resx">
       <DependentUpon>frmcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdatacustomer.resx">
+      <DependentUpon>frmdatacustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmemployee.resx">
       <DependentUpon>frmemployee.cs</DependentUpon>
@@ -333,6 +342,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

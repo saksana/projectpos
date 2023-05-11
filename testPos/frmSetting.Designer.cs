@@ -30,6 +30,8 @@ namespace testPos
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtcate = new System.Windows.Forms.Button();
+            this.txtemployee = new System.Windows.Forms.Button();
             this.txtusers = new System.Windows.Forms.Button();
             this.txtmyshop = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -37,6 +39,7 @@ namespace testPos
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtclose = new testPos.Mycontrols.Mybutton();
+            this.txtwarehouse = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,15 +48,53 @@ namespace testPos
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel4.AutoScroll = true;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel4.Controls.Add(this.txtwarehouse);
+            this.panel4.Controls.Add(this.txtcate);
+            this.panel4.Controls.Add(this.txtemployee);
             this.panel4.Controls.Add(this.txtusers);
             this.panel4.Controls.Add(this.txtmyshop);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(270, 529);
+            this.panel4.Size = new System.Drawing.Size(270, 897);
             this.panel4.TabIndex = 1;
+            // 
+            // txtcate
+            // 
+            this.txtcate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtcate.FlatAppearance.BorderSize = 0;
+            this.txtcate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtcate.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcate.ForeColor = System.Drawing.Color.Black;
+            this.txtcate.Location = new System.Drawing.Point(0, 300);
+            this.txtcate.Name = "txtcate";
+            this.txtcate.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.txtcate.Size = new System.Drawing.Size(270, 60);
+            this.txtcate.TabIndex = 9;
+            this.txtcate.Text = "ຂໍ້ມູນປະເພດສິນຄ້າ";
+            this.txtcate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtcate.UseVisualStyleBackColor = true;
+            this.txtcate.Click += new System.EventHandler(this.txtcate_Click);
+            // 
+            // txtemployee
+            // 
+            this.txtemployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtemployee.FlatAppearance.BorderSize = 0;
+            this.txtemployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtemployee.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemployee.ForeColor = System.Drawing.Color.Black;
+            this.txtemployee.Location = new System.Drawing.Point(0, 240);
+            this.txtemployee.Name = "txtemployee";
+            this.txtemployee.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.txtemployee.Size = new System.Drawing.Size(270, 60);
+            this.txtemployee.TabIndex = 8;
+            this.txtemployee.Text = "ຂໍ້ມູນພະນັກງານ";
+            this.txtemployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtemployee.UseVisualStyleBackColor = true;
+            this.txtemployee.Click += new System.EventHandler(this.btnemployee_Click);
             // 
             // txtusers
             // 
@@ -64,10 +105,10 @@ namespace testPos
             this.txtusers.ForeColor = System.Drawing.Color.Black;
             this.txtusers.Location = new System.Drawing.Point(0, 180);
             this.txtusers.Name = "txtusers";
-            this.txtusers.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.txtusers.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.txtusers.Size = new System.Drawing.Size(270, 60);
             this.txtusers.TabIndex = 7;
-            this.txtusers.Text = "ຜູ້ໃຊ້ລະບົບ";
+            this.txtusers.Text = "ຂໍ້ມູນຜູ້ໃຊ້ລະບົບ";
             this.txtusers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtusers.UseVisualStyleBackColor = true;
             this.txtusers.Click += new System.EventHandler(this.txtusers_Click);
@@ -82,7 +123,7 @@ namespace testPos
             this.txtmyshop.ForeColor = System.Drawing.Color.White;
             this.txtmyshop.Location = new System.Drawing.Point(0, 120);
             this.txtmyshop.Name = "txtmyshop";
-            this.txtmyshop.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.txtmyshop.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.txtmyshop.Size = new System.Drawing.Size(270, 60);
             this.txtmyshop.TabIndex = 6;
             this.txtmyshop.Text = "ຂໍ້ມູນຮ້ານ";
@@ -92,7 +133,7 @@ namespace testPos
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.LightGray;
+            this.panel6.BackColor = System.Drawing.Color.Gainsboro;
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -124,13 +165,13 @@ namespace testPos
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.txtclose);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(938, 529);
+            this.panel3.Size = new System.Drawing.Size(938, 897);
             this.panel3.TabIndex = 2;
             // 
             // txtclose
@@ -154,11 +195,28 @@ namespace testPos
             this.txtclose.UseVisualStyleBackColor = false;
             this.txtclose.Click += new System.EventHandler(this.txtclose_Click);
             // 
+            // txtwarehouse
+            // 
+            this.txtwarehouse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtwarehouse.FlatAppearance.BorderSize = 0;
+            this.txtwarehouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtwarehouse.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwarehouse.ForeColor = System.Drawing.Color.Black;
+            this.txtwarehouse.Location = new System.Drawing.Point(0, 360);
+            this.txtwarehouse.Name = "txtwarehouse";
+            this.txtwarehouse.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.txtwarehouse.Size = new System.Drawing.Size(270, 60);
+            this.txtwarehouse.TabIndex = 10;
+            this.txtwarehouse.Text = "ຂໍ້ມູນຄັງສິນຄ້າ";
+            this.txtwarehouse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtwarehouse.UseVisualStyleBackColor = true;
+            this.txtwarehouse.Click += new System.EventHandler(this.txtwerehouse_Click);
+            // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 529);
+            this.ClientSize = new System.Drawing.Size(938, 897);
             this.Controls.Add(this.panel3);
             this.Name = "frmSetting";
             this.Text = "frmSetting";
@@ -182,5 +240,8 @@ namespace testPos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Mycontrols.Mybutton txtclose;
+        private System.Windows.Forms.Button txtemployee;
+        private System.Windows.Forms.Button txtcate;
+        private System.Windows.Forms.Button txtwarehouse;
     }
 }

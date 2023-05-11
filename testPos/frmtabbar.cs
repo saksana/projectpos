@@ -103,6 +103,7 @@ namespace testPos
             statusStrip1.Visible = false;
             clearlink();
             tscustomer.ForeColor = Color.OrangeRed;
+            openChildFormInPanel(new frmdatacustomer());
         }
 
         private void tsstock_Click(object sender, EventArgs e)

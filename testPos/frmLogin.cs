@@ -16,6 +16,7 @@ namespace testPos
         {
             InitializeComponent();
         }
+
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
         ClassConnectDatabase ccd = new ClassConnectDatabase();
@@ -142,6 +143,8 @@ namespace testPos
 
         private void btnreset_Click(object sender, EventArgs e)
         {
+            frmtabbar frmtabbar = new frmtabbar();
+            frmtabbar.Show();
         }
 
         private void btnlogin_MouseHover(object sender, EventArgs e)

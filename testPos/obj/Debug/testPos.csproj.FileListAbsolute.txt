@@ -39,3 +39,4 @@ C:\Users\saksa\Documents\Visual Studio 2019\Projects\testPos\testPos\obj\Debug\t
 C:\Users\saksa\Documents\Visual Studio 2019\Projects\testPos\testPos\obj\Debug\testPos.frmcontent.resources
 C:\Users\saksa\Documents\Visual Studio 2019\Projects\testPos\testPos\obj\Debug\testPos.frmLogin.resources
 C:\Users\saksa\Documents\Visual Studio 2019\Projects\testPos\testPos\obj\Debug\testPos.frmSetting.resources
+C:\Users\saksa\Documents\Visual Studio 2019\Projects\testPos\testPos\obj\Debug\testPos.frmdatacustomer.resources

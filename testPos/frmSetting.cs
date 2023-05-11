@@ -16,13 +16,28 @@ namespace testPos
         {
             InitializeComponent();
         }
-
+        public void clearcolor()
+        {
+            txtmyshop.BackColor = Color.FromArgb(240, 240, 240);
+            txtmyshop.ForeColor = Color.Black;
+            txtusers.BackColor = Color.FromArgb(240, 240, 240);
+            txtusers.ForeColor = Color.Black;
+            txtemployee.BackColor = Color.FromArgb(240, 240, 240);
+            txtemployee.ForeColor = Color.Black;
+            txtcate.BackColor = Color.FromArgb(240, 240, 240);
+            txtcate.ForeColor = Color.Black;
+            txtwarehouse.BackColor = Color.FromArgb(240, 240, 240);
+            txtwarehouse.ForeColor = Color.Black;
+        }
+        public void active(Button btn)
+        {
+            btn.BackColor = Color.FromArgb(33, 33, 33);
+            btn.ForeColor = Color.White;
+        }
         private void txtmyshop_Click(object sender, EventArgs e)
         {
-            txtmyshop.BackColor = Color.FromArgb(33, 33, 33);
-            txtusers.BackColor = Color.FromArgb(220, 220, 220);
-            txtmyshop.ForeColor = Color.White;
-            txtusers.ForeColor= Color.Black;
+            clearcolor();
+            active(txtmyshop);
         }
 
         private void frmSetting_Load(object sender, EventArgs e)
@@ -32,15 +47,31 @@ namespace testPos
 
         private void txtusers_Click(object sender, EventArgs e)
         {
-            txtmyshop.BackColor = Color.FromArgb(220, 220, 220);
-            txtusers.BackColor = Color.FromArgb(33, 33, 33);
-            txtmyshop.ForeColor = Color.Black;
-            txtusers.ForeColor = Color.White;
+            clearcolor();
+            active(txtusers);
         }
 
         private void txtclose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnemployee_Click(object sender, EventArgs e)
+        {
+            clearcolor();
+            active(txtemployee);
+        }
+
+        private void txtcate_Click(object sender, EventArgs e)
+        {
+            clearcolor();
+            active(txtcate);
+        }
+
+        private void txtwerehouse_Click(object sender, EventArgs e)
+        {
+            clearcolor();
+            active(txtwarehouse);
         }
     }
 }
