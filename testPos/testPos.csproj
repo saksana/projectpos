@@ -135,6 +135,12 @@
     <Compile Include="frmsale.Designer.cs">
       <DependentUpon>frmsale.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmsaleproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsaleproduct.Designer.cs">
+      <DependentUpon>frmsaleproduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,12 @@
     </Compile>
     <Compile Include="frmtabbar.Designer.cs">
       <DependentUpon>frmtabbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmwhproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmwhproduct.Designer.cs">
+      <DependentUpon>frmwhproduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Mycontrols\Mybutton.cs">
       <SubType>Component</SubType>
@@ -185,11 +197,17 @@
     <EmbeddedResource Include="frmsale.resx">
       <DependentUpon>frmsale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmsaleproduct.resx">
+      <DependentUpon>frmsaleproduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmtabbar.resx">
       <DependentUpon>frmtabbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmwhproduct.resx">
+      <DependentUpon>frmwhproduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

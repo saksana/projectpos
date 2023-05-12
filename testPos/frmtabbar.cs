@@ -111,6 +111,7 @@ namespace testPos
             statusStrip1.Visible = false;
             clearlink();
             tsstock.ForeColor = Color.OrangeRed;
+            openChildFormInPanel(new frmwhproduct());
         }
 
         private void tssale_Click(object sender, EventArgs e)
@@ -118,6 +119,7 @@ namespace testPos
             statusStrip1.Visible = false;
             clearlink();
             tssale.ForeColor = Color.OrangeRed;
+            openChildFormInPanel(new frmsaleproduct());
         }
 
         private void tstotal_Click(object sender, EventArgs e)
