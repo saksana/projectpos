@@ -26,5 +26,17 @@ namespace testPos
         {
 
         }
+
+        private void btnadd_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show(DateTime.Now.ToString("dd/MM/yy HH:mm:ss"));
+        }
+
+        private void frmsaleproduct_Load(object sender, EventArgs e)
+        {
+            string billno = DateTime.Now.ToString("ddMMyyHHmmss");
+            lbbillno.Text = "ເລກບິນ : " + billno;
+            
+        }
     }
 }

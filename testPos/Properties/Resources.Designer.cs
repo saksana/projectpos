@@ -163,6 +163,16 @@ namespace testPos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_3211 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_delete_3211", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_delete_bin_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_delete_bin_32", resourceCulture);

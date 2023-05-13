@@ -291,7 +291,7 @@ namespace testPos
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

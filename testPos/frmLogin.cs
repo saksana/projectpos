@@ -20,25 +20,7 @@ namespace testPos
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet();
         ClassConnectDatabase ccd = new ClassConnectDatabase();
-        private Form activeForm = null;
-        private void txtlogin_Click(object sender, EventArgs e)
-        {
-           
-            frmtabbar frm = new frmtabbar();
-            frm.Show();
-
-        }
-
-            private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //private Form activeForm = null;
         private void btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();

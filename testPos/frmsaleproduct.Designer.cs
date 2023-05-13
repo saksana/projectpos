@@ -32,13 +32,13 @@ namespace testPos
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbbillno = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtqty = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.txtbarcode = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@ namespace testPos
             this.label9 = new System.Windows.Forms.Label();
             this.LV = new System.Windows.Forms.ListView();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.mybutton10 = new testPos.Mycontrols.Mybutton();
+            this.btnadd = new testPos.Mycontrols.Mybutton();
             this.mybutton3 = new testPos.Mycontrols.Mybutton();
             this.mybutton4 = new testPos.Mycontrols.Mybutton();
             this.mybutton20 = new testPos.Mycontrols.Mybutton();
@@ -84,7 +84,7 @@ namespace testPos
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lbbillno);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.mybutton3);
@@ -148,31 +148,21 @@ namespace testPos
             this.label3.TabIndex = 10;
             this.label3.Text = "ພະນັກງານ : ສຸກສັນ";
             // 
-            // label2
+            // lbbillno
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 31);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "ເລກບິນ : 88591500194";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 31);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "ວັນທີ : 12/05/2023";
+            this.lbbillno.AutoSize = true;
+            this.lbbillno.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbbillno.Location = new System.Drawing.Point(36, 87);
+            this.lbbillno.Name = "lbbillno";
+            this.lbbillno.Size = new System.Drawing.Size(203, 31);
+            this.lbbillno.TabIndex = 9;
+            this.lbbillno.Text = "ເລກບິນ : 88591500194";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.mybutton10);
+            this.groupBox1.Controls.Add(this.btnadd);
             this.groupBox1.Controls.Add(this.txtqty);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtbarcode);
@@ -222,11 +212,21 @@ namespace testPos
             this.label5.TabIndex = 159;
             this.label5.Text = "ບາໂຄດ";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(54, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 31);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ວັນທີ : 12/05/2023";
+            // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(574, 716);
+            this.label8.Location = new System.Drawing.Point(574, 704);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 31);
             this.label8.TabIndex = 180;
@@ -236,7 +236,7 @@ namespace testPos
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(236, 722);
+            this.label7.Location = new System.Drawing.Point(236, 710);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 31);
             this.label7.TabIndex = 178;
@@ -246,7 +246,7 @@ namespace testPos
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(33, 719);
+            this.label12.Location = new System.Drawing.Point(33, 707);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 31);
             this.label12.TabIndex = 182;
@@ -255,7 +255,7 @@ namespace testPos
             // txtprice
             // 
             this.txtprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtprice.Location = new System.Drawing.Point(569, 716);
+            this.txtprice.Location = new System.Drawing.Point(569, 704);
             this.txtprice.Name = "txtprice";
             this.txtprice.ReadOnly = true;
             this.txtprice.Size = new System.Drawing.Size(272, 37);
@@ -264,7 +264,7 @@ namespace testPos
             // txtname
             // 
             this.txtname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtname.Location = new System.Drawing.Point(233, 719);
+            this.txtname.Location = new System.Drawing.Point(233, 707);
             this.txtname.Name = "txtname";
             this.txtname.ReadOnly = true;
             this.txtname.Size = new System.Drawing.Size(303, 37);
@@ -351,31 +351,32 @@ namespace testPos
             // txtid
             // 
             this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtid.Location = new System.Drawing.Point(29, 716);
+            this.txtid.Location = new System.Drawing.Point(29, 704);
             this.txtid.Name = "txtid";
             this.txtid.ReadOnly = true;
             this.txtid.Size = new System.Drawing.Size(189, 37);
             this.txtid.TabIndex = 183;
             // 
-            // mybutton10
+            // btnadd
             // 
-            this.mybutton10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mybutton10.BackColor = System.Drawing.Color.DarkBlue;
-            this.mybutton10.BackgroundColor = System.Drawing.Color.DarkBlue;
-            this.mybutton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.mybutton10.BorderRadius = 5;
-            this.mybutton10.BorderSize = 0;
-            this.mybutton10.FlatAppearance.BorderSize = 0;
-            this.mybutton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mybutton10.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mybutton10.ForeColor = System.Drawing.Color.White;
-            this.mybutton10.Location = new System.Drawing.Point(597, 28);
-            this.mybutton10.Name = "mybutton10";
-            this.mybutton10.Size = new System.Drawing.Size(145, 45);
-            this.mybutton10.TabIndex = 210;
-            this.mybutton10.Text = "ເພີ່ມລາຍການ";
-            this.mybutton10.TextColor = System.Drawing.Color.White;
-            this.mybutton10.UseVisualStyleBackColor = false;
+            this.btnadd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnadd.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnadd.BackgroundColor = System.Drawing.Color.DarkBlue;
+            this.btnadd.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnadd.BorderRadius = 5;
+            this.btnadd.BorderSize = 0;
+            this.btnadd.FlatAppearance.BorderSize = 0;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadd.Font = new System.Drawing.Font("Noto Sans Lao", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.White;
+            this.btnadd.Location = new System.Drawing.Point(597, 28);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(145, 45);
+            this.btnadd.TabIndex = 210;
+            this.btnadd.Text = "ເພີ່ມລາຍການ";
+            this.btnadd.TextColor = System.Drawing.Color.White;
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click_1);
             // 
             // mybutton3
             // 
@@ -493,7 +494,7 @@ namespace testPos
             this.mybutton23.Name = "mybutton23";
             this.mybutton23.Size = new System.Drawing.Size(132, 55);
             this.mybutton23.TabIndex = 202;
-            this.mybutton23.Text = "OK";
+            this.mybutton23.Text = "C";
             this.mybutton23.TextColor = System.Drawing.Color.Black;
             this.mybutton23.UseVisualStyleBackColor = false;
             // 
@@ -805,6 +806,7 @@ namespace testPos
             this.ClientSize = new System.Drawing.Size(1515, 757);
             this.Controls.Add(this.panel1);
             this.Name = "frmsaleproduct";
+            this.Load += new System.EventHandler(this.frmsaleproduct_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -819,7 +821,7 @@ namespace testPos
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbbillno;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView LV;
         private System.Windows.Forms.NumericUpDown txtqty;
@@ -860,6 +862,6 @@ namespace testPos
         private Mycontrols.Mybutton mybutton3;
         private Mycontrols.Mybutton mybutton4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Mycontrols.Mybutton mybutton10;
+        private Mycontrols.Mybutton btnadd;
     }
 }

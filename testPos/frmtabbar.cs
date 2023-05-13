@@ -19,8 +19,8 @@ namespace testPos
         public string sid;
         public string sname;
         public string sdate;
-        private Form activeForm = null;
         int fl;
+        private Form activeForm = null;
         private void openChildFormInPanel(Form childForm)
         {
             if (activeForm != null)
